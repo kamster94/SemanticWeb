@@ -1,0 +1,16 @@
+@prefix onto: <http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+
+[isHobbit:
+(?hobbit rdfs:subClassOf onto:Man),
+(?hobbit rdfs:subClassOf ?jestMaly),
+(?jestMaly owl:onProperty onto:hasHeight),
+(?jestMaly owl:someValuesFrom onto:Short) -> (?hobbit rdfs:subClassOf onto:Hobbits)]
+
+[isEvilNumenorean:
+(?evilNumenorean rdfs:subClassOf onto:Man),
+(?evilNumenorean rdfs:subClassOf onto:Evil),
+(?evilNumenorean rdfs:subClassOf ?numenoryjczyk),
+(?numenoryjczyk owl:onProperty onto:hasCountry),
+(?numenoryjczyk owl:someValuesFrom onto:Numenor) -> (?evilNumenorean rdfs:subClassOf onto:EvilNumenorean)]

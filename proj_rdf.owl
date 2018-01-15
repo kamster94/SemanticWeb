@@ -1,0 +1,2947 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-9 "http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#">
+    <Ontology rdf:about="http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasCharacteristic -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasCharacteristic">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <inverseOf rdf:resource="&untitled-ontology-9;isCharacteristicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasClan -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasClan">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Clan"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;hasCharacteristic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasCountry -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasCountry">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Country"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasCreator -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasCreator">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Creator"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;hasCharacteristic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasHeight -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasHeight">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Height"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;hasCharacteristic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasMortality -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasMortality">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Mortality"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;hasCharacteristic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasShape -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasShape">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Shape"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;hasCharacteristic"/>
+        <inverseOf rdf:resource="&untitled-ontology-9;isShapeOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasSpecialCharacteristic -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;hasSpecialCharacteristic">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Special"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;hasCharacteristic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#isCharacteristicOf -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;isCharacteristicOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#isCreatorOf -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;isCreatorOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Creator"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Specie"/>
+        <inverseOf rdf:resource="&untitled-ontology-9;hasCreator"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;isCharacteristicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#isHeightOf -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;isHeightOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Height"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Specie"/>
+        <inverseOf rdf:resource="&untitled-ontology-9;hasHeight"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;isCharacteristicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#isMortalityOf -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;isMortalityOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Mortality"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Specie"/>
+        <inverseOf rdf:resource="&untitled-ontology-9;hasMortality"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;isCharacteristicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#isShapeOf -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-9;isShapeOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Shape"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Specie"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-9;isCharacteristicOf"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasRingOfPower -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-9;hasRingOfPower"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Ainur -->
+
+    <Class rdf:about="&untitled-ontology-9;Ainur">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Specie"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Amanyar -->
+
+    <Class rdf:about="&untitled-ontology-9;Amanyar">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCategory"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <disjointWith rdf:resource="&untitled-ontology-9;Moriquendi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Animal -->
+
+    <Class rdf:about="&untitled-ontology-9;Animal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Shape"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Animals -->
+
+    <Class rdf:about="&untitled-ontology-9;Animals">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Creatures"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Animal"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Aragorn -->
+
+    <Class rdf:about="&untitled-ontology-9;Aragorn">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;FightEvil"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Arnor"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;LongLife"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Arnor -->
+
+    <Class rdf:about="&untitled-ontology-9;Arnor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Arnorians -->
+
+    <Class rdf:about="&untitled-ontology-9;Arnorians">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Arnor"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Aule -->
+
+    <Class rdf:about="&untitled-ontology-9;Aule">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Avamanyar -->
+
+    <Class rdf:about="&untitled-ontology-9;Avamanyar">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCategory"/>
+                    <Class>
+                        <complementOf>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                            </Restriction>
+                        </complementOf>
+                    </Class>
+                    <Class>
+                        <complementOf>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+                            </Restriction>
+                        </complementOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <disjointWith rdf:resource="&untitled-ontology-9;Eldar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Avari -->
+
+    <Class rdf:about="&untitled-ontology-9;Avari">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByClan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfAvari"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ElvesByClan"/>
+        <rdfs:subClassOf>
+            <Class>
+                <complementOf>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+                    </Restriction>
+                </complementOf>
+            </Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Class>
+                <complementOf>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                    </Restriction>
+                </complementOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Barefoot -->
+
+    <Class rdf:about="&untitled-ontology-9;Barefoot">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Blacklocks -->
+
+    <Class rdf:about="&untitled-ontology-9;Blacklocks">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#BlueMountainsDwarves -->
+
+    <Class rdf:about="&untitled-ontology-9;BlueMountainsDwarves">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByCountry"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Broadbeams -->
+
+    <Class rdf:about="&untitled-ontology-9;Broadbeams">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Calaquendi -->
+
+    <Class rdf:about="&untitled-ontology-9;Calaquendi">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCategory"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <disjointWith rdf:resource="&untitled-ontology-9;Moriquendi"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Characteristic -->
+
+    <Class rdf:about="&untitled-ontology-9;Characteristic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Cirdan -->
+
+    <Class rdf:about="&untitled-ontology-9;Cirdan">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfSindari"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;GreyHaven"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Immortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Clan -->
+
+    <Class rdf:about="&untitled-ontology-9;Clan">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Characteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Country -->
+
+    <Class rdf:about="&untitled-ontology-9;Country">
+        <disjointWith rdf:resource="&untitled-ontology-9;Specie"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Creator -->
+
+    <Class rdf:about="&untitled-ontology-9;Creator">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Characteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Creatures -->
+
+    <Class rdf:about="&untitled-ontology-9;Creatures">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Specie"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&untitled-ontology-9;Animal"/>
+                                    <rdf:Description rdf:about="&untitled-ontology-9;Monstrous"/>
+                                    <rdf:Description rdf:about="&untitled-ontology-9;Spirit"/>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Dragons -->
+
+    <Class rdf:about="&untitled-ontology-9;Dragons">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Monsters"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;LongLife"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Monstrous"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasWings"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Dunland -->
+
+    <Class rdf:about="&untitled-ontology-9;Dunland">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Dunlendings -->
+
+    <Class rdf:about="&untitled-ontology-9;Dunlendings">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Dunland"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Dwarf -->
+
+    <Class rdf:about="&untitled-ontology-9;Dwarf">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Specie"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Aule"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;LongLife"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Heavy"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#DwarvesByClan -->
+
+    <Class rdf:about="&untitled-ontology-9;DwarvesByClan">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Dwarf"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#DwarvesByCountry -->
+
+    <Class rdf:about="&untitled-ontology-9;DwarvesByCountry">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Dwarf"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Country"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Eagles -->
+
+    <Class rdf:about="&untitled-ontology-9;Eagles">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Animals"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasWings"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Easterlings -->
+
+    <Class rdf:about="&untitled-ontology-9;Easterlings">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Rhun"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Eldar -->
+
+    <Class rdf:about="&untitled-ontology-9;Eldar">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCategory"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:comment>Elfy, które poszły na wielką wędrówkę</rdfs:comment>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Elf -->
+
+    <Class rdf:about="&untitled-ontology-9;Elf">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Specie"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Immortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#ElvesByCategory -->
+
+    <Class rdf:about="&untitled-ontology-9;ElvesByCategory">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Elf"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Special"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#ElvesByClan -->
+
+    <Class rdf:about="&untitled-ontology-9;ElvesByClan">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Elf"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Clan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#ElvesByCountry -->
+
+    <Class rdf:about="&untitled-ontology-9;ElvesByCountry">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Elf"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Country"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Eru -->
+
+    <Class rdf:about="&untitled-ontology-9;Eru">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Creator"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Este -->
+
+    <Class rdf:about="&untitled-ontology-9;Este">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Evil -->
+
+    <Class rdf:about="&untitled-ontology-9;Evil">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByAlignment"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightGood"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <disjointWith rdf:resource="&untitled-ontology-9;Good"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#EvilCreator -->
+
+    <Class rdf:about="&untitled-ontology-9;EvilCreator">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Creator"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#EvilNumenorean -->
+
+    <Class rdf:about="&untitled-ontology-9;EvilNumenorean">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Specie"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#FairSkin -->
+
+    <Class rdf:about="&untitled-ontology-9;FairSkin">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Fallohides -->
+
+    <Class rdf:about="&untitled-ontology-9;Fallohides">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Hobbits"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FairSkin"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Falmari -->
+
+    <Class rdf:about="&untitled-ontology-9;Falmari">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Teleri"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfFalmari"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Teleri"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Faramir -->
+
+    <Class rdf:about="&untitled-ontology-9;Faramir">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Gondor"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightEvil"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#FightEvil -->
+
+    <Class rdf:about="&untitled-ontology-9;FightEvil">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#FightGood -->
+
+    <Class rdf:about="&untitled-ontology-9;FightGood">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Firebeards -->
+
+    <Class rdf:about="&untitled-ontology-9;Firebeards">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Frodo -->
+
+    <Class rdf:about="&untitled-ontology-9;Frodo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Barefoot"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Galadriel -->
+
+    <Class rdf:about="&untitled-ontology-9;Galadriel">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfNoldor"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Lorien"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Immortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Gandalf -->
+
+    <Class rdf:about="&untitled-ontology-9;Gandalf">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Maiar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Gil-galad -->
+
+    <Class rdf:about="&untitled-ontology-9;Gil-galad">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfNoldor"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Lindon"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Immortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Gimli -->
+
+    <Class rdf:about="&untitled-ontology-9;Gimli">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Aule"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;LongLife"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Heavy"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Gondor -->
+
+    <Class rdf:about="&untitled-ontology-9;Gondor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Gondorians -->
+
+    <Class rdf:about="&untitled-ontology-9;Gondorians">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Gondor"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Good -->
+
+    <Class rdf:about="&untitled-ontology-9;Good">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByAlignment"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightEvil"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#GreyHaven -->
+
+    <Class rdf:about="&untitled-ontology-9;GreyHaven">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#GreyHavenElves -->
+
+    <Class rdf:about="&untitled-ontology-9;GreyHavenElves">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;GreyHaven"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Grishnakh -->
+
+    <Class rdf:about="&untitled-ontology-9;Grishnakh">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Melkor"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Gwaihir -->
+
+    <Class rdf:about="&untitled-ontology-9;Gwaihir">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Animal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasWings"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Half-orcs -->
+
+    <Class rdf:about="&untitled-ontology-9;Half-orcs">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Orc"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Saruman"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Harad -->
+
+    <Class rdf:about="&untitled-ontology-9;Harad">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Haradrims -->
+
+    <Class rdf:about="&untitled-ontology-9;Haradrims">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Harad"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Harfoots -->
+
+    <Class rdf:about="&untitled-ontology-9;Harfoots">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Hobbits"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Barefoot"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Heavy -->
+
+    <Class rdf:about="&untitled-ontology-9;Heavy">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Height -->
+
+    <Class rdf:about="&untitled-ontology-9;Height">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Characteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Hobbits -->
+
+    <Class rdf:about="&untitled-ontology-9;Hobbits">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Man"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Humanoid -->
+
+    <Class rdf:about="&untitled-ontology-9;Humanoid">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Shape"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Immortal -->
+
+    <Class rdf:about="&untitled-ontology-9;Immortal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Mortality"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Irmo -->
+
+    <Class rdf:about="&untitled-ontology-9;Irmo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Ironfists -->
+
+    <Class rdf:about="&untitled-ontology-9;Ironfists">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Laiquendi -->
+
+    <Class rdf:about="&untitled-ontology-9;Laiquendi">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Teleri"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfLaiquendi"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Teleri"/>
+        <rdfs:subClassOf>
+            <Class>
+                <complementOf>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                    </Restriction>
+                </complementOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Lindon -->
+
+    <Class rdf:about="&untitled-ontology-9;Lindon">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#LindonianElves -->
+
+    <Class rdf:about="&untitled-ontology-9;LindonianElves">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Lindon"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#LoneMountainDwarves -->
+
+    <Class rdf:about="&untitled-ontology-9;LoneMountainDwarves">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByCountry"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#LongLife -->
+
+    <Class rdf:about="&untitled-ontology-9;LongLife">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Mortality"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Longbeards -->
+
+    <Class rdf:about="&untitled-ontology-9;Longbeards">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Lorien -->
+
+    <Class rdf:about="&untitled-ontology-9;Lorien">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#LorienElves -->
+
+    <Class rdf:about="&untitled-ontology-9;LorienElves">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Lorien"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Maiar -->
+
+    <Class rdf:about="&untitled-ontology-9;Maiar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Ainur"/>
+        <disjointWith rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Man -->
+
+    <Class rdf:about="&untitled-ontology-9;Man">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Specie"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&untitled-ontology-9;LongLife"/>
+                                    <rdf:Description rdf:about="&untitled-ontology-9;Mortal"/>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Manwe -->
+
+    <Class rdf:about="&untitled-ontology-9;Manwe">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Medium -->
+
+    <Class rdf:about="&untitled-ontology-9;Medium">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Height"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Melkor -->
+
+    <Class rdf:about="&untitled-ontology-9;Melkor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;EvilCreator"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#MenByAlignment -->
+
+    <Class rdf:about="&untitled-ontology-9;MenByAlignment">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Man"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&untitled-ontology-9;FightEvil"/>
+                                    <rdf:Description rdf:about="&untitled-ontology-9;FightGood"/>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#MenByCountry -->
+
+    <Class rdf:about="&untitled-ontology-9;MenByCountry">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Man"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Country"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Merry -->
+
+    <Class rdf:about="&untitled-ontology-9;Merry">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;FairSkin"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Mirkwood -->
+
+    <Class rdf:about="&untitled-ontology-9;Mirkwood">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#MirkwoodElves -->
+
+    <Class rdf:about="&untitled-ontology-9;MirkwoodElves">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Mirkwood"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Monsters -->
+
+    <Class rdf:about="&untitled-ontology-9;Monsters">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Creatures"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom>
+                            <Class>
+                                <unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&untitled-ontology-9;Animal"/>
+                                    <rdf:Description rdf:about="&untitled-ontology-9;Monstrous"/>
+                                </unionOf>
+                            </Class>
+                        </someValuesFrom>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightGood"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Monstrous -->
+
+    <Class rdf:about="&untitled-ontology-9;Monstrous">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Shape"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#MoriaDwarves -->
+
+    <Class rdf:about="&untitled-ontology-9;MoriaDwarves">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByCountry"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Moriquendi -->
+
+    <Class rdf:about="&untitled-ontology-9;Moriquendi">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCategory"/>
+                    <Class>
+                        <complementOf>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                            </Restriction>
+                        </complementOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Mortal -->
+
+    <Class rdf:about="&untitled-ontology-9;Mortal">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Mortality"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Mortality -->
+
+    <Class rdf:about="&untitled-ontology-9;Mortality">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Characteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#MouthOfSauron -->
+
+    <Class rdf:about="&untitled-ontology-9;MouthOfSauron">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Numenor"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;LongLife"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightGood"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#NamedCharacters -->
+
+    <Class rdf:about="&untitled-ontology-9;NamedCharacters">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Specie"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Namo -->
+
+    <Class rdf:about="&untitled-ontology-9;Namo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Nandor -->
+
+    <Class rdf:about="&untitled-ontology-9;Nandor">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Teleri"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfNandor"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Teleri"/>
+        <rdfs:subClassOf>
+            <Class>
+                <complementOf>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                    </Restriction>
+                </complementOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Nessa -->
+
+    <Class rdf:about="&untitled-ontology-9;Nessa">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Nienna -->
+
+    <Class rdf:about="&untitled-ontology-9;Nienna">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Noldor -->
+
+    <Class rdf:about="&untitled-ontology-9;Noldor">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByClan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfNoldor"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ElvesByClan"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Numenor -->
+
+    <Class rdf:about="&untitled-ontology-9;Numenor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Númenóreans -->
+
+    <Class rdf:about="&untitled-ontology-9;Númenóreans">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Numenor"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfAvari -->
+
+    <Class rdf:about="&untitled-ontology-9;OfAvari">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfFalmari -->
+
+    <Class rdf:about="&untitled-ontology-9;OfFalmari">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfLaiquendi -->
+
+    <Class rdf:about="&untitled-ontology-9;OfLaiquendi">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfNandor -->
+
+    <Class rdf:about="&untitled-ontology-9;OfNandor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfNoldor -->
+
+    <Class rdf:about="&untitled-ontology-9;OfNoldor">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfSindari -->
+
+    <Class rdf:about="&untitled-ontology-9;OfSindari">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#OfVanyar -->
+
+    <Class rdf:about="&untitled-ontology-9;OfVanyar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Clan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Orc -->
+
+    <Class rdf:about="&untitled-ontology-9;Orc">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Specie"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;EvilCreator"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Orome -->
+
+    <Class rdf:about="&untitled-ontology-9;Orome">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Pippin -->
+
+    <Class rdf:about="&untitled-ontology-9;Pippin">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;FairSkin"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Radagast -->
+
+    <Class rdf:about="&untitled-ontology-9;Radagast">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Maiar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Rhun -->
+
+    <Class rdf:about="&untitled-ontology-9;Rhun">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Ringbearers -->
+
+    <Class rdf:about="&untitled-ontology-9;Ringbearers">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Specie"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasRingOfPower"/>
+                        <someValuesFrom rdf:resource="&xsd;string"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#RivendelElves -->
+
+    <Class rdf:about="&untitled-ontology-9;RivendelElves">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Rivendell"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Rivendell -->
+
+    <Class rdf:about="&untitled-ontology-9;Rivendell">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Rohan -->
+
+    <Class rdf:about="&untitled-ontology-9;Rohan">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Rohirims -->
+
+    <Class rdf:about="&untitled-ontology-9;Rohirims">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Rohan"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Saruman -->
+
+    <Class rdf:about="&untitled-ontology-9;Saruman">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;EvilCreator"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Sauron -->
+
+    <Class rdf:about="&untitled-ontology-9;Sauron">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Maiar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Shape -->
+
+    <Class rdf:about="&untitled-ontology-9;Shape">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Characteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Shelob -->
+
+    <Class rdf:about="&untitled-ontology-9;Shelob">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Monstrous"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightGood"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Shire -->
+
+    <Class rdf:about="&untitled-ontology-9;Shire">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Short -->
+
+    <Class rdf:about="&untitled-ontology-9;Short">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Height"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Sindar -->
+
+    <Class rdf:about="&untitled-ontology-9;Sindar">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Teleri"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfSindari"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Teleri"/>
+        <rdfs:subClassOf>
+            <Class>
+                <complementOf>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                    </Restriction>
+                </complementOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Smaug -->
+
+    <Class rdf:about="&untitled-ontology-9;Smaug">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;LongLife"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Monstrous"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightGood"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasWings"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Snufflers -->
+
+    <Class rdf:about="&untitled-ontology-9;Snufflers">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Orc"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Short"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Special -->
+
+    <Class rdf:about="&untitled-ontology-9;Special">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Characteristic"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Specie -->
+
+    <Class rdf:about="&untitled-ontology-9;Specie"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Spiders -->
+
+    <Class rdf:about="&untitled-ontology-9;Spiders">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Monsters"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Monstrous"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Spirit -->
+
+    <Class rdf:about="&untitled-ontology-9;Spirit">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Shape"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Squint-eyed -->
+
+    <Class rdf:about="&untitled-ontology-9;Squint-eyed">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Saruman"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Stiffbeards -->
+
+    <Class rdf:about="&untitled-ontology-9;Stiffbeards">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Stonefoots -->
+
+    <Class rdf:about="&untitled-ontology-9;Stonefoots">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;DwarvesByClan"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Stoors -->
+
+    <Class rdf:about="&untitled-ontology-9;Stoors">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Hobbits"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Heavy"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Tall -->
+
+    <Class rdf:about="&untitled-ontology-9;Tall">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Height"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Teleri -->
+
+    <Class rdf:about="&untitled-ontology-9;Teleri">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByClan"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;OfFalmari"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;OfLaiquendi"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;OfNandor"/>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;OfSindari"/>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ElvesByClan"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Theoden -->
+
+    <Class rdf:about="&untitled-ontology-9;Theoden">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Rohan"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Eru"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Medium"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightEvil"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Tulkas -->
+
+    <Class rdf:about="&untitled-ontology-9;Tulkas">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Ugluk -->
+
+    <Class rdf:about="&untitled-ontology-9;Ugluk">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasCreator"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Melkor"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Mortal"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;Humanoid"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Ulmo -->
+
+    <Class rdf:about="&untitled-ontology-9;Ulmo">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Umanyar -->
+
+    <Class rdf:about="&untitled-ontology-9;Umanyar">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByCategory"/>
+                    <Class>
+                        <complementOf>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+                            </Restriction>
+                        </complementOf>
+                    </Class>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Umbar -->
+
+    <Class rdf:about="&untitled-ontology-9;Umbar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Country"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Umbarians -->
+
+    <Class rdf:about="&untitled-ontology-9;Umbarians">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;MenByCountry"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasCountry"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Umbar"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Uruks -->
+
+    <Class rdf:about="&untitled-ontology-9;Uruks">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Orc"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Vaire -->
+
+    <Class rdf:about="&untitled-ontology-9;Vaire">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Valar -->
+
+    <Class rdf:about="&untitled-ontology-9;Valar">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Ainur"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Vana -->
+
+    <Class rdf:about="&untitled-ontology-9;Vana">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Vanyar -->
+
+    <Class rdf:about="&untitled-ontology-9;Vanyar">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;ElvesByClan"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasClan"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;OfVanyar"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;ElvesByClan"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;hasUndertakenGreatJourney"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-9;hasSeenLightOfAman"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Varda -->
+
+    <Class rdf:about="&untitled-ontology-9;Varda">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Wights -->
+
+    <Class rdf:about="&untitled-ontology-9;Wights">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-9;Creatures"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Immortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Spirit"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Witch-King -->
+
+    <Class rdf:about="&untitled-ontology-9;Witch-King">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;NamedCharacters"/>
+        <rdfs:subClassOf>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasHeight"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Tall"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasMortality"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Immortal"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasShape"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;Spirit"/>
+                    </Restriction>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-9;hasSpecialCharacteristic"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-9;FightGood"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#Yavanna -->
+
+    <Class rdf:about="&untitled-ontology-9;Yavanna">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Valar"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasSeenLightOfAman -->
+
+    <Class rdf:about="&untitled-ontology-9;hasSeenLightOfAman">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasUndertakenGreatJourney -->
+
+    <Class rdf:about="&untitled-ontology-9;hasUndertakenGreatJourney">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#hasWings -->
+
+    <Class rdf:about="&untitled-ontology-9;hasWings">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Special"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#FrodosPossesion -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-9;FrodosPossesion">
+        <rdf:type rdf:resource="&untitled-ontology-9;Frodo"/>
+        <untitled-ontology-9:hasRingOfPower rdf:datatype="&xsd;string">OneRing</untitled-ontology-9:hasRingOfPower>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kamil/ontologies/2017/10/untitled-ontology-9#GaladrielsPossesion -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-9;GaladrielsPossesion">
+        <rdf:type rdf:resource="&untitled-ontology-9;Galadriel"/>
+        <untitled-ontology-9:hasRingOfPower rdf:datatype="&xsd;string">Nenya</untitled-ontology-9:hasRingOfPower>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Fallohides"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Harfoots"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Stoors"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Arnor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Dunland"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Gondor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;GreyHaven"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Harad"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Lorien"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Mirkwood"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Numenor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Rhun"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Rivendell"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Rohan"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Shire"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Umbar"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Blacklocks"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Broadbeams"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Firebeards"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Ironfists"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Longbeards"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Stiffbeards"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Stonefoots"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Humanoid"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Monstrous"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Spirit"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;GreyHavenElves"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;LorienElves"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;MirkwoodElves"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;RivendelElves"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Medium"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Short"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Tall"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Aule"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Este"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Irmo"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Manwe"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Namo"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Nessa"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Nienna"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Orome"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Tulkas"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Ulmo"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Vaire"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Vana"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Varda"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Yavanna"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Immortal"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;LongLife"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Mortal"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;OfAvari"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;OfFalmari"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;OfLaiquendi"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;OfNandor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;OfNoldor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;OfSindari"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;OfVanyar"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Avari"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Noldor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Teleri"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Vanyar"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Aragorn"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Cirdan"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Faramir"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Frodo"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Galadriel"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Gil-galad"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Gimli"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Grishnakh"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Gwaihir"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Merry"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;MouthOfSauron"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Pippin"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Shelob"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Smaug"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Squint-eyed"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Theoden"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Ugluk"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Witch-King"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;BlueMountainsDwarves"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;LoneMountainDwarves"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;MoriaDwarves"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Half-orcs"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Snufflers"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Uruks"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Avamanyar"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Calaquendi"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Umanyar"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Amanyar"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Avamanyar"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Umanyar"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Falmari"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Laiquendi"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Nandor"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Sindar"/>
+        </members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-9;Creator"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Height"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Mortality"/>
+            <rdf:Description rdf:about="&untitled-ontology-9;Shape"/>
+        </members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
